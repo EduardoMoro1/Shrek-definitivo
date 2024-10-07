@@ -2,7 +2,7 @@
 
 :root{
     --bg-color: #343131;
-    --primary-color: #A04747;
+    --primary-color: #b83030;
     --secondary-color: #D8A25E;
     --font: "Chakra Petch", sans-serif;
 }
@@ -15,16 +15,29 @@ body {
     margin: 0;
 }
 
-.h1{
-    background-color: var(--bg-color);
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+}
+
+h1 {
     font-size: 2rem;
+    color: var(--bg-color);
     font-weight: 700;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bg-color);
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -33,10 +46,20 @@ nav a:hover {
     transition: transform 0.1s;
 }
 
-header {
-    background-color: var(--primary-color);
+.graficos-container {
+    margin: 5rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.3rem;
     text-align: center;
-    padding: 1px;
+    padding: 2rem;
+    border: var(--secondary-color) solid 2px;
+}
+
+span {
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 footer {
@@ -50,3 +73,6 @@ footer {
     margin-top: 2rem;
 }
 
+.grafico {
+    margin-top: 3rem;
+}
